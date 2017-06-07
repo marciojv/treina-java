@@ -11,6 +11,7 @@ import classes.Aluno;
 public class Login extends JFrame {
 
   private JTextField usuarioTextField;
+  
   private JLabel usuarioLabel, passwordLabel;
   private JPasswordField passwordTextField;
   private JButton botaoLogin;
@@ -65,6 +66,16 @@ public class Login extends JFrame {
            {
 
             Aluno a = new Aluno(usuarioTextField.getText(),12,2222);
+          
+            //Aluno ab = new Aluno();
+            //ab.setMatricula(Integer.parseInt(matriculaTextField.getText()));
+            //ab.setNome(Integer.parseInt(nomeTextField.getText()));
+            //ab.setIdade(Integer.parseInt(idadeTextField.getText()));
+           
+            a.gravaAluno();          
+            
+            // Exemplo Casting de String para Int
+            // int intRetorno = Integer.parseInt(usuarioTextField.getText());
             
             boolean autenticou = false;
 			try {

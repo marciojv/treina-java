@@ -14,18 +14,22 @@ public class ConnectionMySQL {
 	}	
 	
 	
-	public static ResultSet executaSQL(String sql) throws SQLException {
+	public static ResultSet executaConsultaSQL(String sql) throws SQLException {
         ConnectionMySQL connectionMysql = new ConnectionMySQL();	
 	    Connection cm = connectionMysql.getConexaoMySQL();
 	    Statement stm = cm.createStatement();
 		
 	    ResultSet rs = stm.executeQuery(sql);			    
-	    
-	    
-	   // connectionMysql.fecharConexao(cm);
-	    
 		return rs;
 	}
+	
+	public static void executaSQL(String sql) throws SQLException {
+        ConnectionMySQL connectionMysql = new ConnectionMySQL();	
+	    Connection cm = connectionMysql.getConexaoMySQL();
+	    Statement stm = cm.createStatement();
+	    stm.execute(sql);    	    
+	}
+
 	
 	
 	public static void fecharConexao(Connection conexao) {
