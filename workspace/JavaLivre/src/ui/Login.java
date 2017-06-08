@@ -5,7 +5,7 @@ import java.awt.event.*;
 import java.sql.SQLException;
 
 import javax.swing.*;
-import classes.Aluno;
+import classes.*;
 
 
 public class Login extends JFrame {
@@ -65,21 +65,22 @@ public class Login extends JFrame {
            public void actionPerformed( ActionEvent event )
            {
 
-            Aluno a = new Aluno(usuarioTextField.getText(),12,2222);
+            //Aluno a = new Aluno(usuarioTextField.getText(),12,2222);
           
-            //Aluno ab = new Aluno();
-            //ab.setMatricula(Integer.parseInt(matriculaTextField.getText()));
-            //ab.setNome(Integer.parseInt(nomeTextField.getText()));
-            //ab.setIdade(Integer.parseInt(idadeTextField.getText()));
-           
-            a.gravaAluno();          
+            Aluno ab = new Aluno();
+            ab.setMatricula(Integer.parseInt("103"));
+            ab.setNome("marcio");
+            ab.setIdade(Integer.parseInt("32"));           
+            ab.gravaAluno();
+            
+            //a.setNome(nome);
             
             // Exemplo Casting de String para Int
             // int intRetorno = Integer.parseInt(usuarioTextField.getText());
             
             boolean autenticou = false;
 			try {
-				autenticou = a.validaSenha(usuarioTextField.getText(),passwordTextField.getText());
+				autenticou = ab.validaSenha(usuarioTextField.getText(),passwordTextField.getText());
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}

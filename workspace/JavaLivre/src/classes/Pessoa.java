@@ -1,34 +1,36 @@
 package classes;
 
-public class Pessoa {
-	private String nome;
-	private int idade;
+class Pessoa {
+	protected String nome;
+	protected int idade;
 
-	public String getNome() {
+	protected String getNome() {
 		return nome;
 	}
 
-	public void setNome(String nome) {
+	protected void setNome(String nome) {
 		this.nome = nome;
 	}
 
-	public int getIdade() {
+	protected int getIdade() {
 		return idade;
 	}
 
-	public void setIdade(int idade) {
+	protected void setIdade(int idade) {
 		this.idade = idade;
 	}
 
 	Pessoa () {
+		Conta_Instancias c = new Conta_Instancias();
+
 	}
 
-	Pessoa (String n, int i) {
+	protected Pessoa (String n, int i) {
 		nome = n;
 		idade = i;
 	}
 
-  void calculaDivisao() {
+	protected void calculaDivisao() {
 		final int zero = 0;
     final int dez = 10;
 		int total;
@@ -41,7 +43,7 @@ public class Pessoa {
 		}
 	}
 
-	void calculaDivisao(int dividendo, int divisor) {
+	protected void calculaDivisao(int dividendo, int divisor) {
 		int total;
 		try{
 			total = dividendo/divisor;
@@ -51,7 +53,7 @@ public class Pessoa {
 		}
 	}
 
-	void printPessoa () {
+	protected void printPessoa () {
 		System.out.print ("Oi meu nome é : "+ nome);
 		System.out.println (". Eu tenho : "+idade+ " anos");
 	}

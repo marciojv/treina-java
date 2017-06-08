@@ -4,10 +4,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import database.ConnectionMySQL;
 
-public class Aluno extends Pessoa {
-	private int matricula;
+public final class Aluno extends Pessoa {
+	
+	private int matricula; 
 
 	public Aluno() {
+		Conta_Instancias c = new Conta_Instancias();
 		
 	}
 
@@ -15,9 +17,10 @@ public class Aluno extends Pessoa {
 		this.setNome(n); // this.nome = n;
 		this.setIdade(i); // this.idade = i;
 		matricula = m;
+
 	}
 	
-	public int getMatricula() {
+	protected int getMatricula() {
 		return matricula;
 	}
 
@@ -25,9 +28,15 @@ public class Aluno extends Pessoa {
 		this.matricula = matricula;
 	}
 
+	public void setNome(String nome) {
+		this.nome = nome ;
+	}
 
-
-	void printAluno() {
+	public void setIdade(int idade) {
+		this.idade = idade ;
+	}
+	
+	protected void printAluno() {
 		this.printPessoa();
 		System.out.println(". e minha matricula é: " + matricula);
 	}
@@ -38,13 +47,15 @@ public class Aluno extends Pessoa {
 		String user_password = null;
 
 		ResultSet rs = ConnectionMySQL.executaConsultaSQL("SELECT username,password from user");
-
+      
+		
 		while (rs.next()) {
 			user_database = rs.getString("username");
 			user_password = rs.getString("password");
 			System.out.println("Usuário = " + user_database);
 		}
-
+ 				
+		 
 		if ((usuario.equals(user_database)) & (senha.equals(user_password))) {
 			return true;
 		} else {
@@ -78,11 +89,15 @@ public class Aluno extends Pessoa {
 				+ "'" + this.getNome() + "',"
 				+ this.getIdade() + ")";
 
-		try {		
-		   ConnectionMySQL.executaSQL(sql);
+		try {
+		//ConnectionMySQL cm = new ConnectionMySQL();	
+		//cm.executaSQL(sql);
+		ConnectionMySQL.executaSQL(sql);
+		   
 		} catch(SQLException e) {
 			System.out.println("ERRO Insercao Aluno" + e + " SQL: " + sql);
 		}
 	}
+		
 
 }

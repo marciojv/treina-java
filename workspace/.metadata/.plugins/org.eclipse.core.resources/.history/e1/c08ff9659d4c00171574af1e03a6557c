@@ -1,0 +1,8 @@
+package br.com.ambientelivre.hack201;
+
+import java.io.Serializable;
+
+
+public class RegistroContaSerializable {
+
+}

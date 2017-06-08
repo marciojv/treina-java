@@ -1,0 +1,13 @@
+
+import br.com.ambientelivre.hack201.RegistroContaSerializable;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
+
+
+public class CriaArquivoSequencial {
+	private ObjectOutputStream output;
+
+}

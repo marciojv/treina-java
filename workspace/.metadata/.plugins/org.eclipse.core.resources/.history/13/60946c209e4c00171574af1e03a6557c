@@ -1,0 +1,27 @@
+package br.com.ambientelivre.hack201;
+
+import java.io.Serializable;
+
+
+public class RegistroContaSerializable implements Serializable {
+
+	private int conta;
+	private String primeiroNome;
+	private String sobreNome;
+	private double saldo;
+	
+	public RegistroContaSerializable()
+	{
+		this(0,"","",0.0);
+		
+	}
+
+	public RegistroContaSerializable(int cct, String nome, String sobre, double sal) {
+		setConta(cct);
+		setPrimeiroNome(nome);
+		setSobreNome(sobre);
+		setSaldo(sal);	
+	}
+	
+	
+}

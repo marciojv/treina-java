@@ -1,0 +1,7 @@
+
+import br.com.ambientelivre.hack201.RegistroContaSerializable;
+
+
+public class CriaArquivoSequencial {
+
+}
