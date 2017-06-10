@@ -1,11 +1,24 @@
 package ui;
 
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.sql.SQLException;
 
-import javax.swing.*;
-import classes.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+import classes.Aluno;
+import serializable.*;
 
 
 public class Login extends JFrame {
@@ -65,13 +78,19 @@ public class Login extends JFrame {
            public void actionPerformed( ActionEvent event )
            {
 
-            //Aluno a = new Aluno(usuarioTextField.getText(),12,2222);
-          
-            Aluno ab = new Aluno();
-            ab.setMatricula(Integer.parseInt("103"));
-            ab.setNome("marcio");
+        	AlunoSerializable ab = new AlunoSerializable();
+            ab.setMatricula(Integer.parseInt("107"));
+            ab.setNome("Joao");
             ab.setIdade(Integer.parseInt("32"));           
             ab.gravaAluno();
+            try {
+            	ab.openFile();
+				ab.adicionaRegistros();
+				ab.closeFile();
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
             
             //a.setNome(nome);
             

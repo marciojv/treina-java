@@ -4,7 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import database.ConnectionMySQL;
 
-public final class Aluno extends Pessoa {
+public class Aluno extends Pessoa {
 	
 	private int matricula; 
 
@@ -20,7 +20,7 @@ public final class Aluno extends Pessoa {
 
 	}
 	
-	protected int getMatricula() {
+	public int getMatricula() {
 		return matricula;
 	}
 
@@ -83,6 +83,7 @@ public final class Aluno extends Pessoa {
 
 	public void gravaAluno() {
 		
+		
 		String sql = "INSERT INTO Aluno "
 				+ "VALUES("
 				+ this.matricula + ","
@@ -90,10 +91,7 @@ public final class Aluno extends Pessoa {
 				+ this.getIdade() + ")";
 
 		try {
-		//ConnectionMySQL cm = new ConnectionMySQL();	
-		//cm.executaSQL(sql);
-		ConnectionMySQL.executaSQL(sql);
-		   
+			ConnectionMySQL.executaSQL(sql);		   
 		} catch(SQLException e) {
 			System.out.println("ERRO Insercao Aluno" + e + " SQL: " + sql);
 		}

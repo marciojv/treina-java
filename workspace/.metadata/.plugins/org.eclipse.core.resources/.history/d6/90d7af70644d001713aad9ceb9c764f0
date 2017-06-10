@@ -1,0 +1,7 @@
+
+import classes.*;
+import java.io.Serializable;
+
+public final class AlunoSerializable extends Aluno implements Serializable {
+
+}

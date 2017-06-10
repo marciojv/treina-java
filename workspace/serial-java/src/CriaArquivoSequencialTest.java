@@ -7,6 +7,8 @@ public class CriaArquivoSequencialTest {
 	{
 		CriaArquivoSequencial application = new CriaArquivoSequencial();
 		
+		System.out.println("nome do arquivo:"+args[0]);
+		
 		application.openFile();
 		application.adicionaRegistros();
 		application.closeFile();

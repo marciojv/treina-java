@@ -1,0 +1,19 @@
+import classes.*;
+import java.io.Serializable;
+
+public final class AlunoSerializable extends Aluno implements Serializable {
+
+	public AlunoSerializable()
+	{
+		this(0,"",0);
+		
+	}
+	
+	public AlunoSerializable(int matricula, String nome, int idade) {
+		setConta(cct);
+		setPrimeiroNome(nome);
+		setSobreNome(sobre);
+		setSaldo(sal);	
+	}
+		
+}

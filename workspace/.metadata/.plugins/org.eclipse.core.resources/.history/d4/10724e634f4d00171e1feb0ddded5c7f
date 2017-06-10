@@ -1,0 +1,5 @@
+package br.com.ambientelivre.hack201;
+
+public class ReadSequentialFile {
+
+}

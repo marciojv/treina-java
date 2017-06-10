@@ -85,10 +85,6 @@ public class CriaArquivoSequencial {
 			 System.exit(1);			 
 		}
 		
-	}
-	
-
-		
-	
+	}	
 	
 }

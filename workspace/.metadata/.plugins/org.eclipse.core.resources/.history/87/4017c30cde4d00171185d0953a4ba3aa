@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+<body>
+<h1>Sistema JavaLivre Enterprise</h1>
+<h3>Sistema de Treinamento em Java</h3>
+
+<select> 
+  <option value="PR">Paraná</option>
+  <option value="SC">Santa Catarina</option>
+  <option value="SP">São Paulo</option>
+</select>
+
+Usuário: <input type="text" name="login"><br>
+Senha:   <input type="text" name="senha"><br>
+
+
+
+</body>
+</html>

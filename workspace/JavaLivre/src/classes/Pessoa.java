@@ -4,19 +4,19 @@ class Pessoa {
 	protected String nome;
 	protected int idade;
 
-	protected String getNome() {
+	public String getNome() {
 		return nome;
 	}
 
-	protected void setNome(String nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
-	protected int getIdade() {
+	public int getIdade() {
 		return idade;
 	}
 
-	protected void setIdade(int idade) {
+	public void setIdade(int idade) {
 		this.idade = idade;
 	}
 

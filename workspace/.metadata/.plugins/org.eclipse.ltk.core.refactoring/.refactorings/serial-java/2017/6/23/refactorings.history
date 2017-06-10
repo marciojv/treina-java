@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;bm.com.ambientelivre.hack204&apos; to &apos;br.com.ambientelivre.hack204&apos;&#x0A;- Original project: &apos;serial-java&apos;&#x0A;- Original element: &apos;serial-java/src/bm.com.ambientelivre.hack204&apos;&#x0A;- Renamed element: &apos;serial-java/src/br.com.ambientelivre.hack204&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;bm.com.ambientelivre.hack204&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;bm.com.ambientelivre.hack204" name="br.com.ambientelivre.hack204" qualified="false" references="true" stamp="1497039318879" textual="false" version="1.0"/>
+</session>
