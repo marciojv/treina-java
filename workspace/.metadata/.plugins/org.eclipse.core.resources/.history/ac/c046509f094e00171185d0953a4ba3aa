@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+
+function ola2() {
+	alert("Este e o Ola2");
+}
+
+function ola2() {
+	alert("Este e o Ola2 duplicado");
+}

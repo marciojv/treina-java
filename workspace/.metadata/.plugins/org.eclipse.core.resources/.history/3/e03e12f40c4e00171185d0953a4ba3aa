@@ -1,0 +1,7 @@
+/**
+ * 
+ */
+
+function ola2() {
+	alert("Este e o Ola2");
+}

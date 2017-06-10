@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+body {
+  color: red;
+  font-family: verdana;  
+}
+
+
+//Adiciona o Css a todos elementos
+* {
+	color: pink;
+}
+

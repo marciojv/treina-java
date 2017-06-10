@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<link rel="stylesheet" type="text/css" href="css/javalivre.css">
+<script type="text/javascript" src="js/javalivre.js"></script>
+
+
+<script>
+
+  function ola(msg) {	  
+  		alert(msg);
+  }
+  
+</script>
+<noscript>
+Seu browser está com o JS desabilitado, nem todoas funcoes vao funcionar!
+</noscript>
+
+<style type="text/css">
+
+div {
+   color: blue;
+   text-align: center;   
+}
+
+h1 {
+  text-align: center;
+}
+
+#h5recupera {
+  font-size: 60%;
+}
+
+.contrato {
+    text-align: center;
+    color: blue;
+}
+
+</style>
+
+
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+<body onload="escreveMensagem()">
+<div>
+
+<h1>Sistema JavaLivre Enterprise</h1>
+<h3>Sistema de Treinamento em Java</h3>
+
+<div id="divlogin" style="color:green" >
+<form id="form1" action="login.html">
+
+<select id="estadologin" name="estado" onBlur="ola('Este e um ola por parametro');ola2()" > 
+  <option value="PR">Paraná</option>
+  <option value="SC">Santa Catarina</option>
+  <option selected value="SP">São Paulo</option>
+</select></br>
+
+Usuário:<input id="usuariologin" type="text" name="login"><br>
+Senha:  <input type="text" name="senha"><br>
+        <input type="button" value="Login" onclick="mostraEstadoUsuario()"><br>
+
+</form>
+</div>
+
+
+<div id="divrecupera">
+<h5 id="h5recupera" >Informe seu email caso queira esquecido sua senha!</h5>
+<form id="form2" action="login.html">
+email: <input id="emailrecupera" type="email" name="email"><br>
+       <input id="botaorecuperasenha" type="submit" value="Recuper Senha"><br>
+
+<select id="estadorecupera" name="estadorecupera" > 
+  <option value="PR">Paraná</option>
+  <option value="SC">Santa Catarina</option>
+  <option selected value="SP">São Paulo</option>
+</select>
+             
+</form>
+</div>
+
+<h3 class="contrato" >Contrato de Uso</h3> 
+<h4 class="contrato" >para usar você deve fornecer um email</h4>
+<h5 class="contrato" >podemos fornecer seu email para nossos parceiros</h5>
+
+<select name="estadocontrato" > 
+  <option value="PR">Paraná</option>
+  <option value="SC">Santa Catarina</option>
+  <option selected value="SP">São Paulo</option>
+</select>
+
+<div>
+</body>
+
+
+
+
+</html>

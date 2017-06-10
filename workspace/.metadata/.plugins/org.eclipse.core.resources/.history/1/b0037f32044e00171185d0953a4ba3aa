@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+body {
+  color: red;
+  font-family: verdana;  
+}
+
+
+form,select,body {
+    color: pink;   
+}
+
+div form select {
+	color: yellow;
+}
+
+#divlogin {
+	width:50%;
+	/*height: 500px;*/
+}
+
+#divrecupera {
+	width:50%;
+	/*height: 500px;*/
+}
+
+:focus {
+	color: blue;
+}
+
+/*
+select:enabled {
+	color: yellow;
+	font-size: 100%;
+}
+*/
+
+select {
+	color: #4CAF50;
+}
+
+/*
+select {
+    color: pink;   
+}
+*/
+
+
+/* Adiciona o Css a todos elementos */
+/*
+* {
+	color: pink;
+}
+*/

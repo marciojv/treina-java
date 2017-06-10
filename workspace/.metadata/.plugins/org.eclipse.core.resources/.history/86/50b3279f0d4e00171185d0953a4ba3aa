@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+
+function ola2() {
+	alert("Este e o Ola2");
+}
+
+function escreveMensagem() { 
+	document.open(); 
+	document.writeln("Olá Mundo");		 
+	document.close(); 
+}
+

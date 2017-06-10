@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+
+function ola2() {
+	alert("Este e o Ola2");
+}
+
+function escreveMensagem() { 
+	//document.open(); 
+	//document.writeln("<title>Teste</title><body>OLA</body>");		 
+	//document.close(); 
+}
+
+function mostraEstadoUsuario() {
+   var estado = document.getElementById("form1").estadologin.value;
+   var usuario = document.getElementById("form1").usuariologin.value;
+   var msg = "Seu estado é: " + estado  + ", obrigado " + usuario; 
+	
+}
+
