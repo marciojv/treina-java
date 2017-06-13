@@ -1454,3 +1454,16 @@ org.eclipse.wst.xml.core.internal.document.StructuredDocumentRegionManagementExc
 
 !ENTRY org.eclipse.wst.jsdt.js.node 4 0 2017-06-10 16:20:19.538
 !MESSAGE Unable to run Node.js program. Verify you have a configured Node.js runtime environment in your system and try again.
+!SESSION 2017-06-13 18:46:08.913 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface.text 2 0 2017-06-13 18:52:26.906
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-06-13 18:52:26.941
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

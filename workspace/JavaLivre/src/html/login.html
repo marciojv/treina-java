@@ -4,10 +4,31 @@
 
 
 <link rel="stylesheet" type="text/css" href="css/javalivre.css">
+<script type="text/javascript" src="libs-js/jquery.min.js" ></script> 
 <script type="text/javascript" src="js/javalivre.js"></script>
 
-
 <script>
+
+$(function(){
+  	$("select,h1").hide();
+})	
+
+$(function(){
+  //	$("#testeh5, .contrato").addClass("contrato2").removeClass("contrato").fadeOut();
+})	
+
+$(function(){
+	var $divp = $("#divprincipal").find('h5').eq(3);
+	var $divp = $("h5").eq(3);
+
+	$divp.html("Este a o Quarto H5 via jQuery");
+	$divp.addClass("contrato2");
+	
+})	
+
+
+
+
 
   function ola(msg) {	  
   		alert(msg);
@@ -45,7 +66,7 @@ h1 {
 <title>Login</title>
 </head>
 <body onload="escreveMensagem()">
-<div>
+<div id="divprincipal">
 
 <h1>Sistema JavaLivre Enterprise</h1>
 <h3>Sistema de Treinamento em Java</h3>
@@ -85,7 +106,8 @@ email: <input id="emailrecupera" type="email" name="email" value="@ambientelivre
 <h3 class="contrato" >Contrato de Uso</h3> 
 <h4 class="contrato" >para usar você deve fornecer um email</h4>
 <h5 class="contrato" >podemos fornecer seu email para nossos parceiros</h5>
-
+<h5 id="testeh5" >Aqui e um test de H5</h5>
+<h5 >este e o terceiro H5</h5>
 <select id="estadocontrato" name="estadocontrato" > 
   <option value="PR">Paraná</option>
   <option value="SC">Santa Catarina</option>

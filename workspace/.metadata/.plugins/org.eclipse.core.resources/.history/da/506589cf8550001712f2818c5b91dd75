@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="libs-js/jquery.min.js" ></script> 
+<script type="text/javascript">
+     $(
+		function(){
+			$("</p>" , {
+				text: "Ola Mundo Append!"
+			}).appendTo("body")
+			
+		})		
+		
+</script>
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+ TESTE
+
+</body>
+</html>
