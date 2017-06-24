@@ -1,0 +1,14 @@
+<%@ page import = "classes.Aluno" %>
+<jsp:useBean id="aluno" class="classes.Aluno" scope="session"/>
+<jsp:setProperty name="user" property="*"/>
+
+
+
+<html>
+<head>
+<title>Saves the data coming from getData page</title>
+</head>
+<BODY>
+<A HREF="showData.jsp">Continue</A>
+</BODY>
+</HTML>

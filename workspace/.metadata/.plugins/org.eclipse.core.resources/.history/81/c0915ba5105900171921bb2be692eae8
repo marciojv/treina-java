@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Scriptlets em a&ccedil;&atilde;o</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<font color = "red" size="+2">Primeiro Scriplet usando a variável <b>"out"</b></font>
+
+<%
+    // Isto é um scriplet.  Note que a variável
+    // "date" declarada aqui está disponível na
+    // para quem quiser usar na página inteira!
+
+    // A saída de System.out.println() pode ser
+    // usada como informação para debbuging no server log
+
+    System.out.println( "Captura a data do sistema" );
+    java.util.Date date = new java.util.Date();
+	out.println("<br><b>Hora de Brasília:</b> " + String.valueOf(date));
+	
+	/* Note o uso da mesma sintaxe de impressão
+	   o mesmo esquema de comentário e a inserção
+	   de tags HTML no método println()
+	*/
+%> 
+
+<br><br>
+<font color = "red" size="+2">Segundo Scriplet usando a variável <b>"request"</b></font>
+
+<%  // Esse scriptlet demonstra o uso da variável pre-definida request
+    // vale tratamento similar para a variável response
+
+    out.println( "<BR>O endereço de sua máquina é <b>" );
+    out.println( request.getRemoteHost() + "</b>");
+
+    /* Note o "truque" para deixar em negrito apenas o nome da máquina cliente...*/
+	
+	// descomente o trecho abaixo e veja como é fácil redirecionar o cliente com JSP
+	 response.sendRedirect( "http://www.ime.usp.br/~rprado");
+%>
+
+</body>
+</html>

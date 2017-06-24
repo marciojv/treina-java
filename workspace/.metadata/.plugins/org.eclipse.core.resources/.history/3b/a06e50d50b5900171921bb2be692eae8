@@ -1,0 +1,14 @@
+<jsp:useBean id="aluno" class="classes.Aluno" scope="session"/> 
+<!-- muuuita calma na hora de colocar o nome da classe acima...
+     só isso me deu uma canseira de dois dias :(  esteja certo
+	 de fazer concordar pacote.classe em cada arquivo que os
+	 utilizar, senão... adeus final de semana ;) -->
+
+<HTML><title>Show the data you just entered!</title>
+<BODY>
+You has been entered<BR>
+Name: <%= user.getUsername() %><BR>
+Email: <%= user.getEmail() %><BR>
+Age: <%= user.getAge() %><BR>
+</BODY>
+</HTML>

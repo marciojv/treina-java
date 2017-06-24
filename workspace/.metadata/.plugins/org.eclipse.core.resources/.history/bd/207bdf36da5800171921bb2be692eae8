@@ -1,0 +1,28 @@
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+public class Teste extends HttpServlet {
+private PrintWriter out;
+public void doGet(HttpServletRequest request, HttpServletResponse response)
+throws IOException, ServletException{
+response.setContentType("text/html");
+out = response.getWriter();
+out.println("<HTML>");
+out.println( "<HEAD>");
+out.println(
+"<TITLE> Teste</TITLE>");
+out.println( "</HEAD>");
+out.println( "<BODY>");
+out.println(
+"Primeiro Servlet.");
+out.println( "</BODY>");
+out.println("</HTML>");
+}
+
+public void doPost(HttpServletRequest request, HttpServletResponse response)
+throws IOException,
+ServletException{
+	doGet(request, response);
+	}
+	}
+}

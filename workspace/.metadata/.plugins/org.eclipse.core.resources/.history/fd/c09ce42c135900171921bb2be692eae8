@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import = "classes.Aluno" %>
+    
+<jsp:include page="header.jsp" />
+<body>
+
+<form action="index.jsp" >
+
+
+</form> 
+
+
+  <h1>Em Manutenção</h1>
+
+
+
+</body>
+<jsp:include page="footer.jsp" />
